@@ -11,11 +11,10 @@ TextInput.PropTypes =
 export default function TextInput({id,labal,value,setValue}){
     return(
         <div>
-          <label htmlFor="id">{labal}:</label>
+          <label htmlFor={id}>{labal}:</label>
           <input 
             type="text"
-            name="id" 
-            id="id"
+            id={id}
             value={value}
             onChange={(e) => setValue (e.target.value) }
           />
